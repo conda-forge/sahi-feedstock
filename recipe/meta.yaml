@@ -27,7 +27,7 @@ requirements:
     - pillow >=8.2.0
     - python >=3.7
     - pyyaml
-    - shapely >=1.7.0
+    - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
 
