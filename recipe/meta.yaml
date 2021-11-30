@@ -30,6 +30,7 @@ requirements:
     - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
+    - requests
 
 test:
   imports:
