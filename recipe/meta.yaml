@@ -32,6 +32,7 @@ requirements:
     - tqdm >=4.48.2
     - requests
     - pytorch
+    - pybboxes ==0.1.4
 
 test:
   imports:
