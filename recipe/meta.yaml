@@ -20,18 +20,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.6
   run:
     - fire
     - py-opencv >=4.2.0.32
     - pillow >=8.2.0
-    - python >=3.7
+    - python >=3.6
     - pyyaml
     - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
     - requests
     - pytorch
+    - pybboxes ==0.1.4
 
 test:
   imports:
