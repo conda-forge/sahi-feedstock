@@ -1,5 +1,5 @@
 {% set name = "sahi" %}
-{% set version = "0.11.7" %}
+{% set version = "0.11.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
-  sha256: 7e0ea70e343375cf81025241487e6cf99222279c3dd8ae5a78ef3a987954fdb8
+  sha256: 0b8028bac18e4ca3a365a6f519a0d2a3b1d17fd7a66d002d2b25c07717569bec
 
 build:
   number: 0
