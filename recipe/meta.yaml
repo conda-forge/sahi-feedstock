@@ -11,7 +11,7 @@ source:
   sha256: 52ca98a4f691e661a41d063142d8adc0849b2999a100e241fd584dfee26a9397
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - sahi=sahi.cli:app
@@ -33,6 +33,7 @@ requirements:
     - requests
     - pytorch
     - pybboxes ==0.1.6
+    - click
 
 test:
   imports:
