@@ -1,5 +1,5 @@
 {% set name = "sahi" %}
-{% set version = "0.11.14" %}
+{% set version = "0.11.15" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
-  sha256: 52ca98a4f691e661a41d063142d8adc0849b2999a100e241fd584dfee26a9397
+  sha256: ab55b570bee991fe0e873305be0080611530d8cf219a51a91e19132d61770322
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - sahi=sahi.cli:app
@@ -22,6 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - opencv <=4.8
     - click
     - fire
     - pillow >=8.2.0
