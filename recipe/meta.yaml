@@ -22,8 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - opencv <=4.9
-    - py-opencv <=4.8
+    - py-opencv <=4.9
     - click
     - fire
     - pillow >=8.2.0
