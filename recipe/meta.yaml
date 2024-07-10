@@ -1,5 +1,5 @@
 {% set name = "sahi" %}
-{% set version = "0.11.16" %}
+{% set version = "0.11.18" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
-  sha256: 6159486626353e8a97eac223a6611990b565255ffd6de60fcc9c80977938c9f0
+  sha256: c592085493a6f68dc2d6bd449b283455aeb6130efa0c6aae242a68e6cdc381ad
 
 build:
   number: 0
@@ -22,6 +22,8 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - numpy <2.0.0
+    - opencv <=4.9.0.80
     - py-opencv <=4.9
     - click
     - fire
