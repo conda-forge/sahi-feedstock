@@ -23,8 +23,7 @@ requirements:
     - python >=3.7
   run:
     - numpy <2.0.0
-    - opencv <=4.9.0.80
-    - py-opencv <=4.9
+    - py-opencv <=4.9.0.80
     - click
     - fire
     - pillow >=8.2.0
