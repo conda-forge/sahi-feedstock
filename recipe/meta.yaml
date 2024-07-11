@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - numpy <2.0.0
+    - numpy
     - py-opencv <=4.9.0.80
     - click
     - fire
