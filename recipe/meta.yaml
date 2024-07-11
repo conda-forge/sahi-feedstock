@@ -22,12 +22,11 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - numpy
-    - py-opencv <=4.9.0.80
     - click
     - fire
     - pillow >=8.2.0
     - pybboxes ==0.1.6
+    - py-opencv <=4.9.0.80
     - python >=3.6
     - pytorch
     - pyyaml
