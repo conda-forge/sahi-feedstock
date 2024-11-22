@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - numpy <2.0.0
     - opencv <=4.9.0.80
@@ -36,7 +37,6 @@ requirements:
     - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
-    - setuptools
 
 test:
   imports:
