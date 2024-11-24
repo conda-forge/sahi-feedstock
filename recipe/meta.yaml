@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
   sha256: c80447778eaad711f5365c3d0313428b2ba133359f122a82f7bfd8836e594428
 
 build:
