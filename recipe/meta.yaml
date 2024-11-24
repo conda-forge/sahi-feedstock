@@ -11,7 +11,7 @@ source:
   sha256: c80447778eaad711f5365c3d0313428b2ba133359f122a82f7bfd8836e594428
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - sahi=sahi.cli:app
