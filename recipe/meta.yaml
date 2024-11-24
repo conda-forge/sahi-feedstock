@@ -23,8 +23,6 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - numpy <2.0.0
-    - opencv <=4.9.0.80
     - click
     - fire
     - pillow >=8.2.0
