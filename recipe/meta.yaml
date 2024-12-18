@@ -23,7 +23,6 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - numpy <2.0.0
     - opencv <=4.10.0.84
     - click
     - fire
