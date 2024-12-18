@@ -23,12 +23,11 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - opencv <=4.10.0.84
     - click
     - fire
     - pillow >=8.2.0
     - pybboxes ==0.1.6
-    - py-opencv <=4.9.0.80
+    - py-opencv <=4.10.0.84
     - python >={{ python_min }}
     - pytorch
     - pyyaml
