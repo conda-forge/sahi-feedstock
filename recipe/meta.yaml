@@ -1,5 +1,5 @@
 {% set name = "sahi" %}
-{% set version = "0.11.23" %}
+{% set version = "0.11.24" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
-  sha256: 08e02b0bbffaaaebcfcb0ccb5d4fd9c4592fa05be9139fdb2678af2d5f30e1cf
+  sha256: 73f3b1ad961abe3d86c997381bb784ec5d9f3d22c8e2fe0fb4147692433c9635
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - python {{ python_min }}
     - hatchling
   run:
+    - opencv <=4.10.0.84
     - click
     - fire
     - pillow >=8.2.0
