@@ -27,8 +27,8 @@ requirements:
     - click
     - fire
     - pillow >=8.2.0
+    - py-opencv <=4.11.0.86
     - pybboxes ==0.1.6
-    - py-opencv <=4.10.0.84
     - python >={{ python_min }}
     - pytorch
     - pyyaml
