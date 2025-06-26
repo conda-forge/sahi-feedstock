@@ -23,7 +23,6 @@ requirements:
     - python {{ python_min }}
     - hatchling
   run:
-    - opencv <=4.11.0.86
     - click
     - fire
     - pillow >=8.2.0
