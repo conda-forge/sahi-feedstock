@@ -30,6 +30,9 @@ requirements:
     - py-opencv <=4.11.0.86
     - pybboxes ==0.1.6
     - python >={{ python_min }}
+    - gstreamer
+    - gst-plugins-base
+    - gst-plugins-good
     - pytorch
     - pyyaml
     - requests
