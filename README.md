@@ -144,6 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@fcakyon](https://github.com/fcakyon/)
-* [@weiji14](https://github.com/weiji14/)
 * [@onuralpszr](https://github.com/onuralpszr/)
+* [@weiji14](https://github.com/weiji14/)
 
