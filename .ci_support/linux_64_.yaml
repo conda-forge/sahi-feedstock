@@ -9,4 +9,4 @@ docker_image:
 gst_plugins_base:
 - '1.24'
 python_min:
-- '3.9'
+- '3.10'
