@@ -33,7 +33,7 @@ requirements:
     - gstreamer
     - gst-plugins-base
     - gst-plugins-good
-    - pytorch
+    - pytorch >=2.4.1
     - pyyaml
     - requests
     - shapely >=2.0.0
@@ -50,6 +50,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - pytorch-cpu
 
 about:
   home: https://github.com/obss/sahi
