@@ -33,7 +33,7 @@ requirements:
     - gstreamer
     - gst-plugins-base
     - gst-plugins-good
-    - pytorch >=2.4.1
+    - pytorch
     - pyyaml
     - requests
     - shapely >=2.0.0
