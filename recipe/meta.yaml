@@ -1,5 +1,5 @@
 {% set name = "sahi" %}
-{% set version = "0.11.35" %}
+{% set version = "0.11.36" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sahi-{{ version }}.tar.gz
-  sha256: 37a56c1aef0abf6f4d53254c26ec2a5c2d21a6bba032b8f5e4a23308d9a3d1d6
+  sha256: 71f55c3e637e04225626aabe9186dd4dbef15aac37c12750ad71a825e7f10579
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - gstreamer
     - gst-plugins-base
     - gst-plugins-good
-    - pytorch
+    - pytorch >=2.4.1
     - pyyaml
     - requests
     - shapely >=2.0.0
