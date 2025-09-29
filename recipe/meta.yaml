@@ -50,6 +50,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - pytorch-cpu
 
 about:
   home: https://github.com/obss/sahi
