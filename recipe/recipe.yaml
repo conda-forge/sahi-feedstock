@@ -27,7 +27,6 @@ requirements:
     - python ${{ python_min }}.*
     - hatchling
   run:
-    - opencv >=4.12.0.88
     - click
     - fire
     - gst-plugins-base
