@@ -1,0 +1,72 @@
+schema_version: 1
+
+context:
+  name: sahi
+  version: 0.12.0
+  python_min: 3.9
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sahi-${{ version }}.tar.gz
+  sha256: 18c8247733e1fce684863f749e7754fa07254b60d9b5ee4dcf7b5fc45257a9c7
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - sahi=sahi.cli:app
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - hatchling
+  run:
+    - opencv >=4.12.0.88
+    - click
+    - fire
+    - gst-plugins-base
+    - gst-plugins-good
+    - gstreamer
+    - numpy
+    - pillow >=8.2.0
+    - py-opencv >=4.12.0.88
+    - pybboxes ==0.1.6
+    - python >=${{ python_min }}
+    - pytorch >=2.4.1
+    - pyyaml
+    - requests
+    - shapely >=2.0.0
+    - terminaltables
+    - tqdm >=4.48.2
+
+tests:
+  - python:
+      imports:
+        - sahi
+        - sahi.postprocess
+      pip_check: true
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - sahi --help
+
+about:
+  homepage: https://obss.github.io/sahi/
+  repository: https://github.com/obss/sahi
+  summary: A vision library for performing sliced inference on large images/small objects
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - onuralpszr
+    - fcakyon
+    - weiji14
