@@ -36,13 +36,10 @@ requirements:
     - numpy
     - pillow >=8.2.0
     - py-opencv >=4.12.0.88
-    - pybboxes ==0.1.6
     - python >=${{ python_min }}
-    - pytorch >=2.4.1
     - pyyaml
     - requests
     - shapely >=2.0.0
-    - terminaltables
     - tqdm >=4.48.2
 
 tests:
