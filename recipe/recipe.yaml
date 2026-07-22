@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sahi
-  version: 0.12.1
+  version: "0.12.2"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sahi-${{ version }}.tar.gz
-  sha256: 4b0fc9d7959e3a4a3b7219931936ce71da4a3cbf17dea76ed31e78c94d41d269
+  sha256: 94e6df4e75fff1dd6978ccd37e9d31d55eb86d8ffbbfa1a494e233f5174c26e9
 
 build:
   number: 0
@@ -36,7 +36,7 @@ requirements:
     - requests
     - shapely >=2.0.0
     - tqdm >=4.48.2
-    - opencv >=4.12.0.88
+    - py-opencv >=4.12.0.88
 tests:
   - python:
       imports:
