@@ -42,7 +42,11 @@ tests:
   - python:
       imports:
         - sahi
+        - sahi.annotation
+        - sahi.auto_model
         - sahi.postprocess
+        - sahi.prediction
+        - sahi.models.base
       pip_check: true
       python_version:
         - ${{ python_min }}.*
