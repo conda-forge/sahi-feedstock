@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sahi
-  version: 0.12.5
+  version: "0.12.6"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sahi-${{ version }}.tar.gz
-  sha256: 3a01ab9c639393be8da546b03ca512a45eee2222d2552043db6cc50c7e66eaac
+  sha256: edc8457a4a4432e7466c80afab71b0faf6990a7bd534f8fcd389680f967ddbf8
 
 build:
   number: 0
@@ -27,24 +27,32 @@ requirements:
     - python ${{ python_min }}.*
     - hatchling
   run:
+    # IMPORTANT: please use py-opencv, not opencv, see
+    # https://github.com/conda-forge/sahi-feedstock/pull/58#discussion_r1674766023
     - click
     - fire
     - matplotlib-base
     - numpy
     - pillow >=8.2.0
+    - py-opencv >=4.12.0.88
     - python >=${{ python_min }}
     - pyyaml
     - requests
     - shapely >=2.0.0
     - tqdm >=4.48.2
-    - opencv >=4.12.0.88
 tests:
   - python:
       imports:
         - sahi
+        - sahi.annotation
+        - sahi.auto_model
         - sahi.postprocess
+        - sahi.prediction
+        - sahi.models.base
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
