@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sahi
-  version: 0.12.7
+  version: 0.12.8
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sahi-${{ version }}.tar.gz
-  sha256: 6ee9b97a0070c186cd00f97306f42c342c4cfa1f9f82754ace6964caf3e77ec3
+  sha256: f2074b3b3aa0f655dbdd69fbb1f1a0b985220f5fb3d920a4206eba160d37028a
 
 build:
   number: 0
